@@ -21,7 +21,7 @@ FFMC = st.number_input("FFMC", value=85.0)
 DMC = st.number_input("DMC", value=50.0)
 ISI = st.number_input("ISI", value=10.0)
 Classes = st.selectbox("Classes", [0.0, 1.0])   # Example: 0 = low risk, 1 = high risk
-Region = st.selectbox("Region", [1.0, 2.0, 3.0, 4.0]) # Example region codes
+Region = st.selectbox("Region", [0,1]) # Example region codes
 
 if st.button("Predict FWI"):
     # Prepare and scale input
